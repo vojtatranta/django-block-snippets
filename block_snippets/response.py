@@ -15,7 +15,7 @@ class SnippetsTemplateResponse(TemplateResponse):
 
     def __init__(self, request, template, context=None, content_type=None,
             status=None, mimetype=None, current_app=None, snippet_names=None):
-        super(SnippetsTemplateResponse, self).__init__(request, template, context, content_type, status, mimetype,
+        super(SnippetsTemplateResponse, self).__init__(request, template, context, content_type, status,
                                                        current_app)
         self.snippet_names = snippet_names
 
